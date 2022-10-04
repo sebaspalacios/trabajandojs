@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Armata&family=Chakra+Petch:wght@300&family=Courgette&family=Exo+2:wght@300&family=Italianno&family=Lobster+Two&family=Manrope:wght@300&family=Nuosu+SIL&family=Play&family=Saira+Condensed:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+     <div id="carpperfil">
+    <img id="avatar" src="Carpintero.jpg" alt="trabajo">
+    <h1 class="marcosrafael">Marcos Rafael</h1>
+    </div> 
+    <ul class="socials">
+        <li>
+        <i class="fas fa-envelope icon"></i> <a class="contact" href="#"> Correo electronico</a>
+        </li>
+        <li>
+        <i class="fa fa-facebook"></i> <a class="contact" href="#">Facebook</a>
+        </li>
+        <li>
+            <i class="fas fa-phone"></i> 888884444455555
+        </li>
+    </ul>
+    <div class="logoperfil">
+    <img id="loguito" src="Logo.gif" alt="logo empresa">
+    </div>
+    <div>
+        <h3> Acerca de mi</h3>
+        <p class="acercade" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas at pariatur voluptates esse, dicta voluptate dolor in dolorem id incidunt ratione aut optio fugiat quod animi! Vitae, totam natus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas at pariatur voluptates esse, dicta voluptate dolor in dolorem id incidunt ratione aut optio fugiat quod animi! Vitae, totam natus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas at pariatur voluptates esse, dicta voluptate dolor in dolorem id incidunt ratione aut optio fugiat quod animi! Vitae, totam natus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas at pariatur voluptates esse, dicta voluptate dolor in dolorem id incidunt ratione aut optio fugiat quod animi! Vitae, totam natus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas at pariatur voluptates esse, dicta voluptate dolor in dolorem id incidunt ratione aut optio fugiat quod animi! Vitae, totam natus!
+        </p>
+    </div>
+    
+      <div id="contactartrab">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contactar a Marcos</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hola, ¿en que puedo ayudarte?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Cliente:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Mensaje:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="puntuacionYrecomendacion">Si estas a gusto con su servicio, puntuá y recomendá</p>
+    <div id="puntajes">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Selecionar puntaje</option>
+            <option id="1" value="1">1 punto</option>
+            <option id="2" value="2">2 puntos</option>
+            <option id="3" value="3">3 puntos</option>
+        </select>
+    </div>
+    <p class="recomienda">¿Recomiendas el servicio de Marcos?</p>
+    <label id="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <div id="enviarPunt">
+        <button  type="submit" class="btn btn-primary">Enviar puntuación</button>
+        </div>
+    <footer>
+        <div class="finalfoot">
+          <h2 class="titulo-seccion">Nos mantengamos conectados</h2>
+        <div class="redes-sociales">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+        <p class="fomentartrab">¡fomentemos el trabajo!</p>
+        </div> 
+      </footer>
+    <script src="https://kit.fontawesome.com/bdbed0aafa.js" crossorigin="anonymus"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+          <script src="app.js"></script> 
+          
+         
+</body>
+
+</html>
