@@ -371,8 +371,21 @@ body {
   background: rgba(218, 77, 77, 0.4);
   color:#e4c794
  } 
- 
+ .sobremi {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+ }
+.guardarCam {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.micuentag {
+  display: flex;
+  justify-content: center;
 
+}
 
 /* 
  .card:before {

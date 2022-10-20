@@ -13,7 +13,7 @@ let username = id("username"),
 let counter = 0;
 
   form.addEventListener("submit", (e) => {
-    counter ++;
+   
     engine(username, 0, "Debe colocar nombre de usuario");
     engine(email , 1 , "Debe colocar su Email");
     engine(password, 2 , "Su contraseña debe contener mas de 8 caracteres");
@@ -21,12 +21,14 @@ let counter = 0;
       alert("Debe completar los campos")
     }
 
-    if((username.value.length, email.value.length, password.value.length  != " ") && (counter <= 1)) {
+    if((username.value.length, email.value.length, password.value.length  != " ") && (counter < 1)) {
+      counter ++;
       let nuevoContenido = document.createElement("div");
       nuevoContenido.innerHTML = `<div class="card">
       <div class="card-info">
         <p class="text-title"> Hola ${username.value}</p>
         <p class="text-body">¡Tu registro en MiTrabajo fue exitoso!</p>
+        <a href="irAlPerfil.html">Ir al perfil</a>
       </div></div>`;
       form.appendChild(nuevoContenido)
     }
@@ -62,7 +64,7 @@ const newPost = {
 "edad" : 25 ,
 "ciudad" : "Cordoba",
 "pais" : "Argentina",
-"codigo posta" : 5000,
+"codigo postal" : 5000,
 } 
 
 fetch('https://jsonplaceholder.typicode.com/users/' , {
@@ -75,3 +77,21 @@ headers: { "content-type": "posts/"
 localStorage.setItem("usuario", 10)
 
 })
+
+function test(){
+  var acer = document.getElementById("acercaDeMi").value;
+  var mip = document.getElementById("miProfesion").value;
+  var mie = document.getElementById("miExperiencia").value;
+  var min = document.getElementById("miNro").value;
+
+var acerdade = localStorage.setItem("acercaDeMi", acer);
+var miProfesion = localStorage.setItem("miProfesion", mip);
+var miExperiencia = localStorage.setItem("miExperiencia", mie);
+var miNumero  = localStorage.setItem("miNro", min);
+
+
+var acerdade = localStorage.getItem("acercaDeMi", acer);
+var miProfesion = localStorage.getItem("miProfesion", miProf);
+var miExperiencia = localStorage.getItem("miExperiencia", mie);
+var miNumero  = localStorage.getItem("miNro", min);
+}
