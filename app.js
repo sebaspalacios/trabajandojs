@@ -91,7 +91,7 @@ var miNumero  = localStorage.setItem("miNro", min);
 
 
 var acerdade = localStorage.getItem("acercaDeMi", acer);
-var miProfesion = localStorage.getItem("miProfesion", miProf);
+var miProfesion = localStorage.getItem("miProfesion", mip);
 var miExperiencia = localStorage.getItem("miExperiencia", mie);
 var miNumero  = localStorage.getItem("miNro", min);
 }
