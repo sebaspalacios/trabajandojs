@@ -28,7 +28,7 @@ let counter = 0;
       <div class="card-info">
         <p class="text-title"> Hola ${username.value}</p>
         <p class="text-body">¡Tu registro en MiTrabajo fue exitoso!</p>
-        <a href="index.html">Ir al perfil</a>
+        <a href="IrAlPerfil.html">Ir al perfil</a>
       </div></div>`;
       form.appendChild(nuevoContenido)
     }
